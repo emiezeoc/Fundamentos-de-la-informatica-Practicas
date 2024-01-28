@@ -1,6 +1,4 @@
-texto = input("Ingrese una cadena de texto: ")
-texto = texto.lower()
-
+#Zona de definicion de funciones
 def contar_vocales(a):
     contador_vocales = 0
     vocales = ["a","e","i","o","u"]
@@ -9,8 +7,18 @@ def contar_vocales(a):
             contador_vocales += 1
     return contador_vocales
 
-cantidad_vocales = contar_vocales(texto)
+def ingresar_palabras():
+    lista_palabras = []
+    palabra = input("Ingrese una palabra: ").lower()
+    
+    while palabra != "fin":
+            cantidad_vocales = contar_vocales(palabra)
+            lista_palabras.append([palabra, cantidad_vocales])
+            palabra = input("ingrese una palabra: ").lower()
+    
+    return lista_palabras
 
-print("La cantidad de vocales en el texto es: " + str(cantidad_vocales))
+#codigo principal
 
 
+print(ingresar_palabras())
