@@ -1,0 +1,9 @@
+Ejercicio 2:
+resuelva modularizando
+a) Realice un programa para manejar equipos de fútbol, Armar una lista que tenga
+información sobre los equipos de fútbol. Para cada equipo deberán tener: el
+nombre del equipo, puntaje en la tabla de posiciones y la cantidad de goles a favor.
+b) Usando la lista anterior, imprimir la cantidad de goles a favor que tienen los
+equipos que están en la primera y última posición de la lista.
+c) Imprimir el nombre del equipo Campeón de la lista generada en el punto a), el
+equipo campeón es aquel que sumo más puntos.
