@@ -19,7 +19,17 @@ def imprimir_goles_primero_ultimo(lista):
     goles_ultimo_equipo = lista[-1][2]
     return print("Los goles del primer equipo son: " + str(Goles_primer_equipo) + ", los goles del ultimo equipo son: " + str(goles_ultimo_equipo))
 
+def imprimir_equipo_campeon(equipos):
+    equipo_campeon = equipos[0]
+
+    for equipo in equipos:
+        if equipo[1] > equipo_campeon[1]:
+            equipo_campeon = equipo 
+    return equipo_campeon
+
+
 #Codigo principal
 
 lista_equipos = armar_equipo()
 imprimir_goles_primero_ultimo(lista_equipos)
+print(imprimir_equipo_campeon(lista_equipos))
