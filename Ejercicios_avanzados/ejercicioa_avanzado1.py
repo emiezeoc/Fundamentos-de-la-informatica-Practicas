@@ -18,7 +18,15 @@ def ingresar_palabras():
     
     return lista_palabras
 
+def imprimir_palabras_mas_3vocales(l): 
+     for palabra in l:
+        if palabra[1] > 3:
+             print(palabra[0])
+     
+          
+
 #codigo principal
 
 
-print(ingresar_palabras())
+lista_palabras = ingresar_palabras()
+imprimir_palabras_mas_3vocales(lista_palabras)
