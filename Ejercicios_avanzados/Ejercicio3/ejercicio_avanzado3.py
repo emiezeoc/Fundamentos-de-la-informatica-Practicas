@@ -70,19 +70,15 @@ while opciones_menu != 0:
     
     if opciones_menu == 1:
         imprimir_estudiantes(lista_estudiantes)       
-    if opciones_menu == 2:
+    elif opciones_menu == 2:
         print(buscar_menor_legajo(lista_estudiantes))
-    if opciones_menu == 3:
+    elif opciones_menu == 3:
         buscar_nombre_mas_largo(lista_estudiantes)
-    if opciones_menu == 4:
+    elif opciones_menu == 4:
         controlar_clave(lista_estudiantes)
-    else:
-        print("Numero no valido, por favor ingrese nuevamente un numero")
-        print("1-Imprimir los datos de todos los alumnos")
-        print("2-Imprimir los datos del alumno que tiene el legajo más chico.")
-        print("3- Imprimir los datos del alumno que tiene el nombre más largo.")
-        print("4- Imprimir si las contraseñas de cada alumno cumplen con un tamaño mayor a 6 caracteres y terminan con un número.")
-        print("0- Finalizar el programa")
+    elif opciones_menu != 0:
+        print("Número no válido, por favor ingrese nuevamente.")
+        
 opciones_menu = int(input("Ingrese un numero para continuar: "))
     
 
